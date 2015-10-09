@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115CA8FE132790F2B12090C1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CBA4BD6DB6475DAF161257 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1810C0C31BC78C4F00AF57EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */; };
 		1810C0C51BC78C4F00AF57EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0C41BC78C4F00AF57EE /* ViewController.swift */; };
 		1810C0C81BC78C4F00AF57EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1810C0C61BC78C4F00AF57EE /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		1810C0DE1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaBlog_sunlijianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1810C0E21BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sinaBlog_sunlijianUITests.swift; sourceTree = "<group>"; };
 		1810C0E41BC78C4F00AF57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF2203772FD63B8BC0684FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74CBA4BD6DB6475DAF161257 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6298ADDA9BB9337DE43F25 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115CA8FE132790F2B12090C1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1810C0D61BC78C4F00AF57EE /* sinaBlog_sunlijianTests */,
 				1810C0E11BC78C4F00AF57EE /* sinaBlog_sunlijianUITests */,
 				1810C0C01BC78C4F00AF57EE /* Products */,
+				440F856C4B7F937E995799A0 /* Pods */,
+				E7EEC51C48B82C902FD8CEBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = sinaBlog_sunlijianUITests;
 			sourceTree = "<group>";
 		};
+		440F856C4B7F937E995799A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AF2203772FD63B8BC0684FF /* Pods.debug.xcconfig */,
+				BE6298ADDA9BB9337DE43F25 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7EEC51C48B82C902FD8CEBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74CBA4BD6DB6475DAF161257 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1810C0E71BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijian" */;
 			buildPhases = (
+				899F0D0556A1C97A10C84E32 /* Check Pods Manifest.lock */,
 				1810C0BB1BC78C4F00AF57EE /* Sources */,
 				1810C0BC1BC78C4F00AF57EE /* Frameworks */,
 				1810C0BD1BC78C4F00AF57EE /* Resources */,
+				B55086CFDD1D22E79C68DB24 /* Embed Pods Frameworks */,
+				0CC73C2B192211D203F919ED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CC73C2B192211D203F919ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899F0D0556A1C97A10C84E32 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B55086CFDD1D22E79C68DB24 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1810C0BB1BC78C4F00AF57EE /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		1810C0E81BC78C4F00AF57EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF2203772FD63B8BC0684FF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sinaBlog_sunlijian/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		1810C0E91BC78C4F00AF57EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6298ADDA9BB9337DE43F25 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = sinaBlog_sunlijian/Info.plist;
@@ -484,6 +561,7 @@
 				1810C0E91BC78C4F00AF57EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1810C0EA1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				1810C0EC1BC78C4F00AF57EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1810C0ED1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				1810C0EF1BC78C4F00AF57EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
