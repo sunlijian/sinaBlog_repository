@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1810C0C31BC78C4F00AF57EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */; };
+		1810C0C51BC78C4F00AF57EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0C41BC78C4F00AF57EE /* ViewController.swift */; };
+		1810C0C81BC78C4F00AF57EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1810C0C61BC78C4F00AF57EE /* Main.storyboard */; };
+		1810C0CA1BC78C4F00AF57EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1810C0C91BC78C4F00AF57EE /* Assets.xcassets */; };
+		1810C0CD1BC78C4F00AF57EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1810C0CB1BC78C4F00AF57EE /* LaunchScreen.storyboard */; };
+		1810C0D81BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0D71BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift */; };
+		1810C0E31BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0E21BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1810C0D41BC78C4F00AF57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1810C0B71BC78C4F00AF57EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1810C0BE1BC78C4F00AF57EE;
+			remoteInfo = sinaBlog_sunlijian;
+		};
+		1810C0DF1BC78C4F00AF57EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1810C0B71BC78C4F00AF57EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1810C0BE1BC78C4F00AF57EE;
+			remoteInfo = sinaBlog_sunlijian;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1810C0BF1BC78C4F00AF57EE /* sinaBlog_sunlijian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaBlog_sunlijian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1810C0C41BC78C4F00AF57EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1810C0C71BC78C4F00AF57EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1810C0C91BC78C4F00AF57EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1810C0CC1BC78C4F00AF57EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1810C0CE1BC78C4F00AF57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1810C0D31BC78C4F00AF57EE /* sinaBlog_sunlijianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaBlog_sunlijianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1810C0D71BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sinaBlog_sunlijianTests.swift; sourceTree = "<group>"; };
+		1810C0D91BC78C4F00AF57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1810C0DE1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaBlog_sunlijianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1810C0E21BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sinaBlog_sunlijianUITests.swift; sourceTree = "<group>"; };
+		1810C0E41BC78C4F00AF57EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1810C0BC1BC78C4F00AF57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0D01BC78C4F00AF57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0DB1BC78C4F00AF57EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1810C0B61BC78C4F00AF57EE = {
+			isa = PBXGroup;
+			children = (
+				1810C0C11BC78C4F00AF57EE /* sinaBlog_sunlijian */,
+				1810C0D61BC78C4F00AF57EE /* sinaBlog_sunlijianTests */,
+				1810C0E11BC78C4F00AF57EE /* sinaBlog_sunlijianUITests */,
+				1810C0C01BC78C4F00AF57EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1810C0C01BC78C4F00AF57EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1810C0BF1BC78C4F00AF57EE /* sinaBlog_sunlijian.app */,
+				1810C0D31BC78C4F00AF57EE /* sinaBlog_sunlijianTests.xctest */,
+				1810C0DE1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1810C0C11BC78C4F00AF57EE /* sinaBlog_sunlijian */ = {
+			isa = PBXGroup;
+			children = (
+				1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */,
+				1810C0C41BC78C4F00AF57EE /* ViewController.swift */,
+				1810C0C61BC78C4F00AF57EE /* Main.storyboard */,
+				1810C0C91BC78C4F00AF57EE /* Assets.xcassets */,
+				1810C0CB1BC78C4F00AF57EE /* LaunchScreen.storyboard */,
+				1810C0CE1BC78C4F00AF57EE /* Info.plist */,
+			);
+			path = sinaBlog_sunlijian;
+			sourceTree = "<group>";
+		};
+		1810C0D61BC78C4F00AF57EE /* sinaBlog_sunlijianTests */ = {
+			isa = PBXGroup;
+			children = (
+				1810C0D71BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift */,
+				1810C0D91BC78C4F00AF57EE /* Info.plist */,
+			);
+			path = sinaBlog_sunlijianTests;
+			sourceTree = "<group>";
+		};
+		1810C0E11BC78C4F00AF57EE /* sinaBlog_sunlijianUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1810C0E21BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift */,
+				1810C0E41BC78C4F00AF57EE /* Info.plist */,
+			);
+			path = sinaBlog_sunlijianUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1810C0BE1BC78C4F00AF57EE /* sinaBlog_sunlijian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1810C0E71BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijian" */;
+			buildPhases = (
+				1810C0BB1BC78C4F00AF57EE /* Sources */,
+				1810C0BC1BC78C4F00AF57EE /* Frameworks */,
+				1810C0BD1BC78C4F00AF57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sinaBlog_sunlijian;
+			productName = sinaBlog_sunlijian;
+			productReference = 1810C0BF1BC78C4F00AF57EE /* sinaBlog_sunlijian.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1810C0D21BC78C4F00AF57EE /* sinaBlog_sunlijianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1810C0EA1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianTests" */;
+			buildPhases = (
+				1810C0CF1BC78C4F00AF57EE /* Sources */,
+				1810C0D01BC78C4F00AF57EE /* Frameworks */,
+				1810C0D11BC78C4F00AF57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1810C0D51BC78C4F00AF57EE /* PBXTargetDependency */,
+			);
+			name = sinaBlog_sunlijianTests;
+			productName = sinaBlog_sunlijianTests;
+			productReference = 1810C0D31BC78C4F00AF57EE /* sinaBlog_sunlijianTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1810C0DD1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1810C0ED1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianUITests" */;
+			buildPhases = (
+				1810C0DA1BC78C4F00AF57EE /* Sources */,
+				1810C0DB1BC78C4F00AF57EE /* Frameworks */,
+				1810C0DC1BC78C4F00AF57EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1810C0E01BC78C4F00AF57EE /* PBXTargetDependency */,
+			);
+			name = sinaBlog_sunlijianUITests;
+			productName = sinaBlog_sunlijianUITests;
+			productReference = 1810C0DE1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1810C0B71BC78C4F00AF57EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = myCompany;
+				TargetAttributes = {
+					1810C0BE1BC78C4F00AF57EE = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UVVL5YM7BH;
+					};
+					1810C0D21BC78C4F00AF57EE = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UVVL5YM7BH;
+						TestTargetID = 1810C0BE1BC78C4F00AF57EE;
+					};
+					1810C0DD1BC78C4F00AF57EE = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UVVL5YM7BH;
+						TestTargetID = 1810C0BE1BC78C4F00AF57EE;
+					};
+				};
+			};
+			buildConfigurationList = 1810C0BA1BC78C4F00AF57EE /* Build configuration list for PBXProject "sinaBlog_sunlijian" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1810C0B61BC78C4F00AF57EE;
+			productRefGroup = 1810C0C01BC78C4F00AF57EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1810C0BE1BC78C4F00AF57EE /* sinaBlog_sunlijian */,
+				1810C0D21BC78C4F00AF57EE /* sinaBlog_sunlijianTests */,
+				1810C0DD1BC78C4F00AF57EE /* sinaBlog_sunlijianUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1810C0BD1BC78C4F00AF57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1810C0CD1BC78C4F00AF57EE /* LaunchScreen.storyboard in Resources */,
+				1810C0CA1BC78C4F00AF57EE /* Assets.xcassets in Resources */,
+				1810C0C81BC78C4F00AF57EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0D11BC78C4F00AF57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0DC1BC78C4F00AF57EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1810C0BB1BC78C4F00AF57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1810C0C51BC78C4F00AF57EE /* ViewController.swift in Sources */,
+				1810C0C31BC78C4F00AF57EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0CF1BC78C4F00AF57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1810C0D81BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1810C0DA1BC78C4F00AF57EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1810C0E31BC78C4F00AF57EE /* sinaBlog_sunlijianUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1810C0D51BC78C4F00AF57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1810C0BE1BC78C4F00AF57EE /* sinaBlog_sunlijian */;
+			targetProxy = 1810C0D41BC78C4F00AF57EE /* PBXContainerItemProxy */;
+		};
+		1810C0E01BC78C4F00AF57EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1810C0BE1BC78C4F00AF57EE /* sinaBlog_sunlijian */;
+			targetProxy = 1810C0DF1BC78C4F00AF57EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1810C0C61BC78C4F00AF57EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1810C0C71BC78C4F00AF57EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1810C0CB1BC78C4F00AF57EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1810C0CC1BC78C4F00AF57EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1810C0E51BC78C4F00AF57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1810C0E61BC78C4F00AF57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1810C0E81BC78C4F00AF57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sinaBlog_sunlijian/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijian";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1810C0E91BC78C4F00AF57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = sinaBlog_sunlijian/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijian";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1810C0EB1BC78C4F00AF57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = sinaBlog_sunlijianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sinaBlog_sunlijian.app/sinaBlog_sunlijian";
+			};
+			name = Debug;
+		};
+		1810C0EC1BC78C4F00AF57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = sinaBlog_sunlijianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijianTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sinaBlog_sunlijian.app/sinaBlog_sunlijian";
+			};
+			name = Release;
+		};
+		1810C0EE1BC78C4F00AF57EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = sinaBlog_sunlijianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = sinaBlog_sunlijian;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1810C0EF1BC78C4F00AF57EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = sinaBlog_sunlijianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.sinaBlog-sunlijianUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = sinaBlog_sunlijian;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1810C0BA1BC78C4F00AF57EE /* Build configuration list for PBXProject "sinaBlog_sunlijian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1810C0E51BC78C4F00AF57EE /* Debug */,
+				1810C0E61BC78C4F00AF57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1810C0E71BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1810C0E81BC78C4F00AF57EE /* Debug */,
+				1810C0E91BC78C4F00AF57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1810C0EA1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1810C0EB1BC78C4F00AF57EE /* Debug */,
+				1810C0EC1BC78C4F00AF57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1810C0ED1BC78C4F00AF57EE /* Build configuration list for PBXNativeTarget "sinaBlog_sunlijianUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1810C0EE1BC78C4F00AF57EE /* Debug */,
+				1810C0EF1BC78C4F00AF57EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1810C0B71BC78C4F00AF57EE /* Project object */;
+}
