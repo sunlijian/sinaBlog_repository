@@ -21,6 +21,10 @@ class IWTabBarController: UITabBarController {
         //给闭包赋值
         tabBar.plusBtnClick = {
             print("点击了中间加号 button ")
+            //初始化一个 view
+            let composeView = IWComposeView()
+            //进行显示
+            composeView.show()
         }
         
         //添加首页

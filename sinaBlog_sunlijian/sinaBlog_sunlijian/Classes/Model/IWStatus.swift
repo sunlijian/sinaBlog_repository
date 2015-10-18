@@ -18,7 +18,47 @@ class IWStatus: NSObject {
     //当前帐号里面的每一条微博的作者
     var user: IWUser?
     //微博的创建时间
-    var created_at: String?
+    var created_at: String?{
+        didSet{//    Sat Oct 17 11:35:32 +0800 2015
+            
+            //解析创创建时间
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "EE MM dd HH:mm:ss z yyyy"
+            formatter.locale = NSLocale(localeIdentifier: "en_US")
+            let created_date = formatter.dateFromString(created_at!)
+            print(created_date)
+            //判断是否是同一年
+            if(NSDate.isThisYear(created_date!)){
+                
+                if(NSDate.isToday(created_date!)){
+                    //设置今天  
+                    let currentDate = NSDate()
+                    let timeInterval = currentDate.timeIntervalSinceDate(created_date!)
+                    if timeInterval < 60{
+                        created_at = "刚刚"
+                    }else if timeInterval < 60 * 60{
+                        created_at = "\(Int(timeInterval)/60)分钟前"
+                    }else{
+                        created_at = "\(Int(timeInterval)/(60*60))小时前"
+                    }
+                    
+                    
+                }else if(NSDate.isYesterday(created_date!)){
+                    //设置昨天
+                    formatter.dateFormat = "HH:mm"
+                    created_at = "昨天 " + formatter.stringFromDate(created_date!)
+                }else{
+                    //设置 其他
+                    formatter.dateFormat = "MM-dd HH:mm"
+                    created_at = formatter.stringFromDate(created_date!)
+                }
+            //不是同一年
+            }else{
+                formatter.dateFormat = "yyyy-MM-dd"
+                created_at = formatter.stringFromDate(created_date!)
+            }
+        }
+    }
     //微博的来源
     var source: String?{
         didSet{ // "<a href=\"http://weibo.com/\" rel=\"nofollow\">微博 weibo.com</a>"
@@ -73,7 +113,6 @@ class IWStatus: NSObject {
             super.setValue(value, forKey: key)
         }
     }
-    
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
         
     }

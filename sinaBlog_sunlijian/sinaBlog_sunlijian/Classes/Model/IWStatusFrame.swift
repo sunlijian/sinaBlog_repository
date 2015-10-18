@@ -25,6 +25,8 @@ class IWStatusFrame: NSObject {
             setStatus()
         }
     }
+    //整体 原创 view 的 frame
+    var originalViewF:CGRect?
     //头像
     var headImageViewF:CGRect?
     //姓名
@@ -54,6 +56,11 @@ class IWStatusFrame: NSObject {
         let status = self.status!
         
 //----------------------------------------计算原创微博的frame-----------------------------------------------------//
+        //原创整体 view 的 frame
+        let originalViewX :CGFloat = 0
+        let originalViewY = CELL_CHILD_VIEW_MARGIN
+        let originalViewW = SCREEN_W
+        var originalViewH :CGFloat = 0
         //头像
         let headImageViewX = CELL_CHILD_VIEW_MARGIN
         let headImageViewY = CELL_CHILD_VIEW_MARGIN
@@ -86,19 +93,22 @@ class IWStatusFrame: NSObject {
         let textSize = status.text?.size(UIFont.systemFontOfSize(CELL_STATUS_TEXT_FONT), constrainedToSize: CGSizeMake(SCREEN_W - 2 * CELL_CHILD_VIEW_MARGIN, CGFloat(MAXFLOAT)))
         textF = CGRect(origin: CGPointMake(textX, textY), size: textSize!)
         
-        //底部toolBar 的Y
-        var statusToolBarY = CGRectGetMaxY(textF!) + CELL_CHILD_VIEW_MARGIN
-        
+        //原创微博整体 view 的 H
+        originalViewH = CGRectGetMaxY(textF!)
         //原创微博的图片
         if let originalPhotosUrls = status.pic_urls where status.pic_urls?.count > 0{
             let originalPhotosX = CELL_CHILD_VIEW_MARGIN
             let originalPhotosY = CGRectGetMaxY(textF!) + CELL_CHILD_VIEW_MARGIN
             let originalPhotosSize = IWStatusPhotos.size(originalPhotosUrls.count)
             originalPhotosF = CGRect(origin: CGPointMake(originalPhotosX, originalPhotosY), size: originalPhotosSize)
-            //如果有图片 那么底部的 toolBar 就等于图片的frame.y的最大值
-            statusToolBarY = CGRectGetMaxY(originalPhotosF!) + CELL_CHILD_VIEW_MARGIN
-        
+            //整体 view 的 y
+            originalViewH = CGRectGetMaxY(originalPhotosF!)
         }
+        //整体的 view.frame
+        originalViewF = CGRectMake(originalViewX, originalViewY, originalViewW, originalViewH)
+        
+        //底部toolBar 的Y
+        var statusToolBarY = CGRectGetMaxY(originalViewF!)
 //----------------------------------------计算转发微博的frame-----------------------------------------------------//
         //转发微博的 frame
         if let retStatus = status.retweeted_status {

@@ -41,6 +41,8 @@ class HomeTableViewController: UITableViewController,IWPopViewDelegate {
         self.refreshControl?.addTarget(self, action: "loadData", forControlEvents: UIControlEvents.ValueChanged)
         //去掉分割线
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        //设置 tableView 的背景色
+        tableView.backgroundColor = RGB(r: 240, g: 240, b: 240)
     }
     
     
@@ -111,7 +113,7 @@ class HomeTableViewController: UITableViewController,IWPopViewDelegate {
         //设置接口
         let urlString = "https://api.weibo.com/2/statuses/friends_timeline.json"
         //设置网络请求管理
-        let manager = AFHTTPSessionManager()
+//        let manager = AFHTTPSessionManager()
         //开始请求
         //设置请求参数
         var params = ["access_token": IWUserAccount.loadAccount()!.access_token!]
@@ -127,49 +129,46 @@ class HomeTableViewController: UITableViewController,IWPopViewDelegate {
             }
         }
         
-        manager.GET(urlString, parameters: params, success: { (dataTask, result) -> Void in
-            //请求成功
+        IWNetWorkTools.request(IWNetWorkToolRequestType.GET,url: urlString, paramters: params, success: { (result) -> () in
+            //
+            let statusArray = result["statuses"] as? [[String : AnyObject]]
             
-            if let resultDict = result as? [String: AnyObject] {
-                //取出里面的微博数据里面的数组
-                let statusArray = resultDict["statuses"] as? [[String : AnyObject]]
+            //初始化一个数组
+            var tempArray = [IWStatusFrame]()
+            
+            //遍历数组
+            for statusDict in statusArray! {
+                //初始化模型
+                let status = IWStatus(dictionary: statusDict)
                 
-                //初始化一个数组
-                var tempArray = [IWStatusFrame]()
+                //
+                let statusFrame = IWStatusFrame()
+                statusFrame.status = status
                 
-                //遍历数组
-                for statusDict in statusArray! {
-                    //初始化模型
-                    let status = IWStatus(dictionary: statusDict)
-                    
-                    //
-                    let statusFrame = IWStatusFrame()
-                    statusFrame.status = status
-                    
-                    //向临时数组添加
-                    tempArray.append(statusFrame)
-                }
-                //添加数据前判断是上拉加载还是下拉刷新
-                if self.pullupView.isAnimating(){
-                    self.statusArray += tempArray
-                }else{
-                    self.statusArray = tempArray + self.statusArray
-                    //添加刷新时的提示 lable
-                    if self.statusArray.count != 0{
-                        self.showPullDownTips(tempArray.count)
-                    }
-                }
-                
-                //重新加载数据
-                self.tableView.reloadData()
+                //向临时数组添加
+                tempArray.append(statusFrame)
             }
-            //停止菊花转
-            self.endAnimation()
+            //添加数据前判断是上拉加载还是下拉刷新
+            if self.pullupView.isAnimating(){
+                self.statusArray += tempArray
+            }else{
+                self.statusArray = tempArray + self.statusArray
+                //添加刷新时的提示 lable
+                if self.statusArray.count != 0{
+                    self.showPullDownTips(tempArray.count)
+                }
+            }
             
-        }) { (dataTask, error) -> Void in
-                //请求失败
+            //重新加载数据
+            self.tableView.reloadData()
+            
+            self.endAnimation()
+        }) { (error) -> () in
+            //
+            printLog("错误信息:\(error)")
             SVProgressHUD.showInfoWithStatus("请求失败,你的网络不好")
-            self.pullupView.stopAnimating()
+            
+            self.endAnimation()
         }
     }
     

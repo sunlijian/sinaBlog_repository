@@ -20,6 +20,8 @@ class IWStatusCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        //设置 contentView 的背景颜色
+        contentView.backgroundColor = RGB(r: 240, g: 240, b: 240)
         //原创微博的整体 View
         contentView.addSubview(originalView)
         //转发的微博 整体 View
@@ -37,6 +39,8 @@ class IWStatusCell: UITableViewCell {
 //----------------------------------------------微博原创 view的加载-----------------------------------//
     private lazy var originalView:UIView = {
         let view = UIView()
+        //设置原创的颜色
+        view.backgroundColor = UIColor.whiteColor()
         //添加头像
         view.addSubview(self.headImageView)
         //添加姓名
@@ -125,6 +129,9 @@ class IWStatusCell: UITableViewCell {
         let statusF = statusFrame!
         let status = statusF.status!
 //----------------------------------------原创微博的赋值-----------------------------------------------------//
+        //设置整体 view 的 frame
+        originalView.frame = statusF.originalViewF!
+        
         //设置 原创头像
         headImageView.frame = statusF.headImageViewF!
         headImageView.sd_setImageWithURL(NSURL(string: (status.user?.profile_image_url)!), placeholderImage: UIImage(named: "avatar_default_big"))
