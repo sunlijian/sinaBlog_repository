@@ -12,18 +12,49 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func hasNewVersion() -> Bool {
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //判断是不是第一次登陆或有新版本
+        //取出当前的版本号
+        let currentVersion = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
+        //取出偏好设置中的版本号
+        let appVersion = NSUserDefaults.standardUserDefaults().objectForKey("currentVersion")
+        //进行比较
+        if appVersion?.compare(currentVersion) == NSComparisonResult.OrderedAscending || appVersion == nil {
+            //保存新的版本号
+            NSUserDefaults.standardUserDefaults().setValue(currentVersion, forKey: "currentVersion")
+            //同步一下
+            NSUserDefaults.standardUserDefaults().synchronize()
+            return true
+        }
+        return false
+    }
+    
+    //判断账号是否有
+    func defaultViewController() -> UIViewController{
+        let account = IWUserAccount.loadAccount()
+        if (account != nil) {
+            return IWWelcomViewController()
+        }else{
+            return IWNavigationController(rootViewController: IWOAthViewController())
+        }
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //初始化一个 WINDOWS
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        //创建一个windows 的根控制器
-        let tabBarVC = IWTabBarController()
-        
+        //判断是不是第一次登陆或有新版本
+        let isTrue = hasNewVersion()
+        if isTrue {
+            window?.rootViewController = IWNewFeatureViewController()
+            
+        }else {
+            window?.rootViewController = defaultViewController()
+        }
         //让 windows 可见
-        window?.rootViewController = tabBarVC
         window?.makeKeyAndVisible()
         
         return true

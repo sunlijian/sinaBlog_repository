@@ -7,22 +7,46 @@
 //
 
 import UIKit
-
+private var TABBAR_INDEX_KEY = UnsafePointer<Void>()
 class IWTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //添加控制器
-        addChildViewController(HomeTableViewController(), title: "主页", imageName: "tabbar_home")
-        addChildViewController(MessageTableViewController(), title: "消息", imageName: "tabbar_message_center")
-        addChildViewController(DiscoverTableViewController(), title: "发现", imageName: "tabbar_discover")
-        addChildViewController(ProfileTableViewController(), title: "我", imageName: "tabbar_profile")
+        //创建 tabBar
+        let tabBar = IWTarBar()
+        //KVC 给控制器设置 tabBar
+        setValue(tabBar, forKeyPath: "tabBar")
+        
+        //给闭包赋值
+        tabBar.plusBtnClick = {
+            print("点击了中间加号 button ")
+        }
+        
+        //添加首页
+        addChildViewController(HomeTableViewController(), title: "主页", imageName: "tabbar_home", index: 0)
+        //添加消息
+        addChildViewController(MessageTableViewController(), title: "消息", imageName: "tabbar_message_center", index: 1)
+        //添加发现
+        addChildViewController(DiscoverTableViewController(), title: "发现", imageName: "tabbar_discover", index: 2)
+        //添加我
+        addChildViewController(ProfileTableViewController(), title: "我", imageName: "tabbar_profile", index: 3)
         
         
     }
     //添加控制器
-    func addChildViewController(childController: UIViewController, title: String, imageName: String) {
+    func addChildViewController(childController: UIViewController, title: String, imageName: String, index: Int) {
+        
+        
+        //设置成我们自己的 tabBarItem
+//        let item = IWTabBarItem()
+//        item.index = index
+//        childController.tabBarItem = item
+        let item = IWTabBarItem()
+        objc_setAssociatedObject(item, &TABBAR_INDEX_KEY, NSNumber(integer: index), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        //绑定完属性 再赋线控制器
+        childController.tabBarItem = item
+        
         //设置标题
         childController.title = title
         //设置图片
@@ -34,9 +58,52 @@ class IWTabBarController: UITabBarController {
         childController.tabBarItem.setTitleTextAttributes(attibutes, forState: UIControlState.Selected)
         
         //设置导航控制器
-        let nav = UINavigationController(rootViewController: childController)
+        let nav = IWNavigationController(rootViewController: childController)
         //
         addChildViewController(nav)
+    }
+    
+    
+    //添加选中时的动画
+    override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        //强转成 iwItem
+        
+        
+        //记录一下
+        var index = 0
+        //遍历 tabBar
+        for tabBarChild in tabBar.subviews {
+            //取出 tabBarItem
+            if tabBarChild.isKindOfClass(NSClassFromString("UITabBarButton")!){
+                //判断当前选中 index
+                let result = objc_getAssociatedObject(item, &TABBAR_INDEX_KEY)
+                
+                if index == (result as! Int){
+                    //遍历UITabBarButton 找到UITabBarSwappableImageView
+                    for tabBarButtonChild in tabBarChild.subviews{
+                        //取出UITabBarSwappableImageView
+                        if tabBarButtonChild.isKindOfClass(NSClassFromString("UITabBarSwappableImageView")!){
+                            //设置UITabBarSwappableImageView的 transform
+                            
+                            UIView.animateWithDuration(0.2, animations: { () -> Void in
+                                //
+                                tabBarButtonChild.transform = CGAffineTransformMakeScale(0.8, 0.8)
+                            }, completion: { (finished) -> Void in
+                                    //
+                                UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+                                    //
+                                    tabBarButtonChild.transform = CGAffineTransformIdentity
+                                }, completion: { (finished) -> Void in
+                                    //
+                                })
+                            })
+                        }
+                    }
+                }
+                
+                index++
+            }
+        }
     }
     
     
