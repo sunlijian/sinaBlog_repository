@@ -12,6 +12,17 @@ let COMPOSE_BUTTON_W: CGFloat = 80
 let COMPOSE_BUTTON_H: CGFloat = 110
 
 class IWComposeButton: UIButton {
+    
+    
+    //移除高亮状态
+    override var highlighted: Bool{
+        set{
+
+        }get{
+            return false
+        }
+    }
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)

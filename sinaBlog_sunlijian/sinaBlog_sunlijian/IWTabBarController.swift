@@ -24,7 +24,7 @@ class IWTabBarController: UITabBarController {
             //初始化一个 view
             let composeView = IWComposeView()
             //进行显示
-            composeView.show()
+            composeView.show(self)
         }
         
         //添加首页

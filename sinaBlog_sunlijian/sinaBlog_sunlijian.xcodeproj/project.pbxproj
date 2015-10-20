@@ -26,6 +26,7 @@
 		1810C0F71BC790C000AF57EE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0F61BC790C000AF57EE /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1810C0F91BC790D800AF57EE /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0F81BC790D800AF57EE /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1810C10E1BC7D2CD00AF57EE /* IWTarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C10D1BC7D2CD00AF57EE /* IWTarBar.swift */; settings = {ASSET_TAGS = (); }; };
+		1836332C1BD62A3200E3A6D3 /* IWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836332B1BD62A3200E3A6D3 /* IWTextView.swift */; settings = {ASSET_TAGS = (); }; };
 		18409F481BCF74C500D53440 /* IWTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18409F471BCF74C500D53440 /* IWTabBarItem.swift */; settings = {ASSET_TAGS = (); }; };
 		18409F4C1BCFCD5200D53440 /* IWStatusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18409F4B1BCFCD5200D53440 /* IWStatusFrame.swift */; settings = {ASSET_TAGS = (); }; };
 		187260F21BCA72BF0051D50E /* IWHomeTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187260F11BCA72BF0051D50E /* IWHomeTitleButton.swift */; settings = {ASSET_TAGS = (); }; };
@@ -35,6 +36,7 @@
 		187F14041BD007DD00F46847 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F14031BD007DD00F46847 /* String+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		188BCAB81BD383D5001B3612 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BCAB71BD383D5001B3612 /* NSDate+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		188BCABB1BD3B199001B3612 /* IWNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BCABA1BD3B199001B3612 /* IWNetWorkTools.swift */; settings = {ASSET_TAGS = (); }; };
+		188CE3111BD551B2009814C8 /* IWComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CE3101BD551B2009814C8 /* IWComposeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		188FF1181BCD59E70031C5B8 /* IWStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF1171BCD59E70031C5B8 /* IWStatus.swift */; settings = {ASSET_TAGS = (); }; };
 		188FF11A1BCD61530031C5B8 /* IWWelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF1191BCD61530031C5B8 /* IWWelcomViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		189421671BCC8BDE00D7B6DB /* IWOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -90,6 +92,7 @@
 		1810C0F61BC790C000AF57EE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../../../../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		1810C0F81BC790D800AF57EE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageTableViewController.swift; path = ../../../../MessageTableViewController.swift; sourceTree = "<group>"; };
 		1810C10D1BC7D2CD00AF57EE /* IWTarBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTarBar.swift; sourceTree = "<group>"; };
+		1836332B1BD62A3200E3A6D3 /* IWTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTextView.swift; sourceTree = "<group>"; };
 		18409F471BCF74C500D53440 /* IWTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTabBarItem.swift; sourceTree = "<group>"; };
 		18409F4B1BCFCD5200D53440 /* IWStatusFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusFrame.swift; sourceTree = "<group>"; };
 		187260F11BCA72BF0051D50E /* IWHomeTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWHomeTitleButton.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		187F14031BD007DD00F46847 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../Controller/String+Extension.swift"; sourceTree = "<group>"; };
 		188BCAB71BD383D5001B3612 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		188BCABA1BD3B199001B3612 /* IWNetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWNetWorkTools.swift; sourceTree = "<group>"; };
+		188CE3101BD551B2009814C8 /* IWComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWComposeViewController.swift; sourceTree = "<group>"; };
 		188FF1171BCD59E70031C5B8 /* IWStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatus.swift; sourceTree = "<group>"; };
 		188FF1191BCD61530031C5B8 /* IWWelcomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWWelcomViewController.swift; sourceTree = "<group>"; };
 		189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWOAthViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		180048401BD3ED1A00B0415E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				188CE3101BD551B2009814C8 /* IWComposeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			children = (
 				180048421BD3ED3B00B0415E /* IWComposeView.swift */,
 				180048441BD3F4C100B0415E /* IWComposeButton.swift */,
+				1836332B1BD62A3200E3A6D3 /* IWTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -664,12 +670,14 @@
 				189421691BCCB16E00D7B6DB /* IWUserAccount.swift in Sources */,
 				1810C0F31BC7908700AF57EE /* HomeTableViewController.swift in Sources */,
 				187F14001BCFF08700F46847 /* IWUser.swift in Sources */,
+				1836332C1BD62A3200E3A6D3 /* IWTextView.swift in Sources */,
 				18AB8C1B1BC81ED100DDFDD9 /* CommonConfig.swift in Sources */,
 				18409F4C1BCFCD5200D53440 /* IWStatusFrame.swift in Sources */,
 				188BCAB81BD383D5001B3612 /* NSDate+Extension.swift in Sources */,
 				187F14021BCFFA3100F46847 /* IWStatusCell.swift in Sources */,
 				18409F481BCF74C500D53440 /* IWTabBarItem.swift in Sources */,
 				187F14041BD007DD00F46847 /* String+Extension.swift in Sources */,
+				188CE3111BD551B2009814C8 /* IWComposeViewController.swift in Sources */,
 				18011FD21BCBD67E00450CCB /* IWNewFeatureViewController.swift in Sources */,
 				1810C0F11BC78F6200AF57EE /* IWTabBarController.swift in Sources */,
 				1810C0F51BC790B200AF57EE /* DiscoverTableViewController.swift in Sources */,
