@@ -16,6 +16,7 @@
 		18011FD21BCBD67E00450CCB /* IWNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18011FD11BCBD67E00450CCB /* IWNewFeatureViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		180FCB491BD20B79001DFF3E /* IWStatusPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FCB481BD20B79001DFF3E /* IWStatusPhotos.swift */; settings = {ASSET_TAGS = (); }; };
 		180FCB4B1BD2762A001DFF3E /* IWStatusPhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FCB4A1BD2762A001DFF3E /* IWStatusPhotoInfo.swift */; settings = {ASSET_TAGS = (); }; };
+		180FE6911BDFCDB100AB3709 /* IWEmotionTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180FE6901BDFCDB100AB3709 /* IWEmotionTextAttachment.swift */; settings = {ASSET_TAGS = (); }; };
 		1810C0C31BC78C4F00AF57EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */; };
 		1810C0CA1BC78C4F00AF57EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1810C0C91BC78C4F00AF57EE /* Assets.xcassets */; };
 		1810C0D81BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0D71BC78C4F00AF57EE /* sinaBlog_sunlijianTests.swift */; };
@@ -26,6 +27,8 @@
 		1810C0F71BC790C000AF57EE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0F61BC790C000AF57EE /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1810C0F91BC790D800AF57EE /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C0F81BC790D800AF57EE /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1810C10E1BC7D2CD00AF57EE /* IWTarBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C10D1BC7D2CD00AF57EE /* IWTarBar.swift */; settings = {ASSET_TAGS = (); }; };
+		1825F70A1BDA464200967C72 /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = 1825F7091BDA464200967C72 /* EmotionIcons */; settings = {ASSET_TAGS = (); }; };
+		183092271BD7A8210022FC1C /* IWComposeToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183092261BD7A8210022FC1C /* IWComposeToolBar.swift */; settings = {ASSET_TAGS = (); }; };
 		1836332C1BD62A3200E3A6D3 /* IWTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836332B1BD62A3200E3A6D3 /* IWTextView.swift */; settings = {ASSET_TAGS = (); }; };
 		18409F481BCF74C500D53440 /* IWTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18409F471BCF74C500D53440 /* IWTabBarItem.swift */; settings = {ASSET_TAGS = (); }; };
 		18409F4C1BCFCD5200D53440 /* IWStatusFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18409F4B1BCFCD5200D53440 /* IWStatusFrame.swift */; settings = {ASSET_TAGS = (); }; };
@@ -39,14 +42,28 @@
 		188CE3111BD551B2009814C8 /* IWComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CE3101BD551B2009814C8 /* IWComposeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		188FF1181BCD59E70031C5B8 /* IWStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF1171BCD59E70031C5B8 /* IWStatus.swift */; settings = {ASSET_TAGS = (); }; };
 		188FF11A1BCD61530031C5B8 /* IWWelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FF1191BCD61530031C5B8 /* IWWelcomViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		189149921BDF993F00847DDD /* IWEmotionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189149911BDF993F00847DDD /* IWEmotionTextView.swift */; settings = {ASSET_TAGS = (); }; };
 		189421671BCC8BDE00D7B6DB /* IWOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		189421691BCCB16E00D7B6DB /* IWUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189421681BCCB16E00D7B6DB /* IWUserAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		18AB8AAD1BDBC3090017436A /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AAC1BDBC3090017436A /* NSString+Emoji.m */; settings = {ASSET_TAGS = (); }; };
+		18AB8AAF1BDBC54A0017436A /* IWEmotionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AAE1BDBC54A0017436A /* IWEmotionButton.swift */; settings = {ASSET_TAGS = (); }; };
+		18AB8AB11BDBDB270017436A /* IWEmotionPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AB01BDBDB270017436A /* IWEmotionPopView.swift */; settings = {ASSET_TAGS = (); }; };
+		18AB8AB31BDBDB410017436A /* IWEmotionPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AB8AB21BDBDB410017436A /* IWEmotionPopView.xib */; settings = {ASSET_TAGS = (); }; };
 		18AB8C151BC7FA9A00DDFDD9 /* IWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8C141BC7FA9A00DDFDD9 /* IWNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 		18AB8C191BC803FA00DDFDD9 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8C181BC803FA00DDFDD9 /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		18AB8C1B1BC81ED100DDFDD9 /* CommonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8C1A1BC81ED100DDFDD9 /* CommonConfig.swift */; settings = {ASSET_TAGS = (); }; };
+		18B5E5391BD8E24000439957 /* IWComposePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5E5381BD8E24000439957 /* IWComposePhotosView.swift */; settings = {ASSET_TAGS = (); }; };
+		18B5E53B1BD8EF5400439957 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5E53A1BD8EF5400439957 /* UIImage+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		18B5E53D1BD8F1D000439957 /* IWComposePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B5E53C1BD8F1D000439957 /* IWComposePhotoView.swift */; settings = {ASSET_TAGS = (); }; };
 		18B73D0A1BC7E31500CF4943 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B73D091BC7E31500CF4943 /* UIView+Extension.swift */; settings = {ASSET_TAGS = (); }; };
 		18C3884E1BD2ABFD004462F0 /* IWStatusPhotoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3884D1BD2ABFD004462F0 /* IWStatusPhotoImageView.swift */; settings = {ASSET_TAGS = (); }; };
 		18CAD8181BD0B7B4001B6AA9 /* IWStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD8171BD0B7B4001B6AA9 /* IWStatusToolBar.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1AB11BD92F2B00B8A057 /* IWEmotionKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1AB01BD92F2B00B8A057 /* IWEmotionKeyboard.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1AB31BD942B400B8A057 /* IWEmotionToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1AB21BD942B400B8A057 /* IWEmotionToolBar.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1AB51BD953EF00B8A057 /* IWEmotionToolBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1AB41BD953EF00B8A057 /* IWEmotionToolBarButton.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1AB71BD967CE00B8A057 /* IWEmotionPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1AB61BD967CE00B8A057 /* IWEmotionPageCell.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1AB91BD968EA00B8A057 /* IWEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1AB81BD968EA00B8A057 /* IWEmotion.swift */; settings = {ASSET_TAGS = (); }; };
+		18CE1ABC1BD96A2B00B8A057 /* IWEmotionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE1ABB1BD96A2B00B8A057 /* IWEmotionTools.swift */; settings = {ASSET_TAGS = (); }; };
 		18DCA4DD1BD3C6560008A3A2 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DCA4DC1BD3C6560008A3A2 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -76,6 +93,7 @@
 		18011FD11BCBD67E00450CCB /* IWNewFeatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWNewFeatureViewController.swift; sourceTree = "<group>"; };
 		180FCB481BD20B79001DFF3E /* IWStatusPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusPhotos.swift; sourceTree = "<group>"; };
 		180FCB4A1BD2762A001DFF3E /* IWStatusPhotoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusPhotoInfo.swift; sourceTree = "<group>"; };
+		180FE6901BDFCDB100AB3709 /* IWEmotionTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionTextAttachment.swift; sourceTree = "<group>"; };
 		1810C0BF1BC78C4F00AF57EE /* sinaBlog_sunlijian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaBlog_sunlijian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1810C0C91BC78C4F00AF57EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +110,8 @@
 		1810C0F61BC790C000AF57EE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../../../../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		1810C0F81BC790D800AF57EE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageTableViewController.swift; path = ../../../../MessageTableViewController.swift; sourceTree = "<group>"; };
 		1810C10D1BC7D2CD00AF57EE /* IWTarBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTarBar.swift; sourceTree = "<group>"; };
+		1825F7091BDA464200967C72 /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
+		183092261BD7A8210022FC1C /* IWComposeToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWComposeToolBar.swift; sourceTree = "<group>"; };
 		1836332B1BD62A3200E3A6D3 /* IWTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTextView.swift; sourceTree = "<group>"; };
 		18409F471BCF74C500D53440 /* IWTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWTabBarItem.swift; sourceTree = "<group>"; };
 		18409F4B1BCFCD5200D53440 /* IWStatusFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusFrame.swift; sourceTree = "<group>"; };
@@ -105,14 +125,29 @@
 		188CE3101BD551B2009814C8 /* IWComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWComposeViewController.swift; sourceTree = "<group>"; };
 		188FF1171BCD59E70031C5B8 /* IWStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatus.swift; sourceTree = "<group>"; };
 		188FF1191BCD61530031C5B8 /* IWWelcomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWWelcomViewController.swift; sourceTree = "<group>"; };
+		189149911BDF993F00847DDD /* IWEmotionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionTextView.swift; sourceTree = "<group>"; };
 		189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWOAthViewController.swift; sourceTree = "<group>"; };
 		189421681BCCB16E00D7B6DB /* IWUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWUserAccount.swift; sourceTree = "<group>"; };
+		18AB8AAB1BDBC3090017436A /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		18AB8AAC1BDBC3090017436A /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		18AB8AAE1BDBC54A0017436A /* IWEmotionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionButton.swift; sourceTree = "<group>"; };
+		18AB8AB01BDBDB270017436A /* IWEmotionPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionPopView.swift; sourceTree = "<group>"; };
+		18AB8AB21BDBDB410017436A /* IWEmotionPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IWEmotionPopView.xib; sourceTree = "<group>"; };
 		18AB8C141BC7FA9A00DDFDD9 /* IWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWNavigationController.swift; sourceTree = "<group>"; };
 		18AB8C181BC803FA00DDFDD9 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		18AB8C1A1BC81ED100DDFDD9 /* CommonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonConfig.swift; path = View/CommonConfig.swift; sourceTree = "<group>"; };
+		18B5E5381BD8E24000439957 /* IWComposePhotosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWComposePhotosView.swift; sourceTree = "<group>"; };
+		18B5E53A1BD8EF5400439957 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		18B5E53C1BD8F1D000439957 /* IWComposePhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWComposePhotoView.swift; sourceTree = "<group>"; };
 		18B73D091BC7E31500CF4943 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		18C3884D1BD2ABFD004462F0 /* IWStatusPhotoImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusPhotoImageView.swift; sourceTree = "<group>"; };
 		18CAD8171BD0B7B4001B6AA9 /* IWStatusToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWStatusToolBar.swift; sourceTree = "<group>"; };
+		18CE1AB01BD92F2B00B8A057 /* IWEmotionKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionKeyboard.swift; sourceTree = "<group>"; };
+		18CE1AB21BD942B400B8A057 /* IWEmotionToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionToolBar.swift; sourceTree = "<group>"; };
+		18CE1AB41BD953EF00B8A057 /* IWEmotionToolBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionToolBarButton.swift; sourceTree = "<group>"; };
+		18CE1AB61BD967CE00B8A057 /* IWEmotionPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionPageCell.swift; sourceTree = "<group>"; };
+		18CE1AB81BD968EA00B8A057 /* IWEmotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotion.swift; sourceTree = "<group>"; };
+		18CE1ABB1BD96A2B00B8A057 /* IWEmotionTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionTools.swift; sourceTree = "<group>"; };
 		18DCA4DA1BD3C6560008A3A2 /* sinaBlog_sunlijian-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sinaBlog_sunlijian-Bridging-Header.h"; sourceTree = "<group>"; };
 		18DCA4DB1BD3C6560008A3A2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		18DCA4DC1BD3C6560008A3A2 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -150,6 +185,7 @@
 		1800483F1BD3ED1A00B0415E /* Compose */ = {
 			isa = PBXGroup;
 			children = (
+				18CE1ABA1BD96A0500B8A057 /* Tool */,
 				180048401BD3ED1A00B0415E /* Controller */,
 				180048411BD3ED1A00B0415E /* View */,
 			);
@@ -167,9 +203,13 @@
 		180048411BD3ED1A00B0415E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18CE1AAF1BD92EFC00B8A057 /* EmotionKeyboard */,
 				180048421BD3ED3B00B0415E /* IWComposeView.swift */,
 				180048441BD3F4C100B0415E /* IWComposeButton.swift */,
 				1836332B1BD62A3200E3A6D3 /* IWTextView.swift */,
+				183092261BD7A8210022FC1C /* IWComposeToolBar.swift */,
+				18B5E5381BD8E24000439957 /* IWComposePhotosView.swift */,
+				18B5E53C1BD8F1D000439957 /* IWComposePhotoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +257,7 @@
 			children = (
 				1810C0FA1BC7CDD100AF57EE /* Classes */,
 				1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */,
+				1825F7091BDA464200967C72 /* EmotionIcons */,
 				1810C0C91BC78C4F00AF57EE /* Assets.xcassets */,
 				180048461BD3F78400B0415E /* compose.plist */,
 				1810C0CE1BC78C4F00AF57EE /* Info.plist */,
@@ -261,6 +302,8 @@
 				188FF1171BCD59E70031C5B8 /* IWStatus.swift */,
 				187F13FF1BCFF08700F46847 /* IWUser.swift */,
 				180FCB4A1BD2762A001DFF3E /* IWStatusPhotoInfo.swift */,
+				18CE1AB81BD968EA00B8A057 /* IWEmotion.swift */,
+				180FE6901BDFCDB100AB3709 /* IWEmotionTextAttachment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -398,6 +441,7 @@
 		1810C10A1BC7CDD100AF57EE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				18AB8AAA1BDBC3090017436A /* NSStringEmoji */,
 				18DCA4DB1BD3C6560008A3A2 /* UIImage+ImageEffects.h */,
 				18DCA4DC1BD3C6560008A3A2 /* UIImage+ImageEffects.m */,
 				18B73D091BC7E31500CF4943 /* UIView+Extension.swift */,
@@ -405,6 +449,7 @@
 				187F14031BD007DD00F46847 /* String+Extension.swift */,
 				188BCAB71BD383D5001B3612 /* NSDate+Extension.swift */,
 				18DCA4DA1BD3C6560008A3A2 /* sinaBlog_sunlijian-Bridging-Header.h */,
+				18B5E53A1BD8EF5400439957 /* UIImage+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -449,6 +494,38 @@
 				188FF1191BCD61530031C5B8 /* IWWelcomViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		18AB8AAA1BDBC3090017436A /* NSStringEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				18AB8AAB1BDBC3090017436A /* NSString+Emoji.h */,
+				18AB8AAC1BDBC3090017436A /* NSString+Emoji.m */,
+			);
+			path = NSStringEmoji;
+			sourceTree = "<group>";
+		};
+		18CE1AAF1BD92EFC00B8A057 /* EmotionKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18CE1AB01BD92F2B00B8A057 /* IWEmotionKeyboard.swift */,
+				18CE1AB21BD942B400B8A057 /* IWEmotionToolBar.swift */,
+				18CE1AB41BD953EF00B8A057 /* IWEmotionToolBarButton.swift */,
+				18CE1AB61BD967CE00B8A057 /* IWEmotionPageCell.swift */,
+				18AB8AAE1BDBC54A0017436A /* IWEmotionButton.swift */,
+				18AB8AB01BDBDB270017436A /* IWEmotionPopView.swift */,
+				18AB8AB21BDBDB410017436A /* IWEmotionPopView.xib */,
+				189149911BDF993F00847DDD /* IWEmotionTextView.swift */,
+			);
+			path = EmotionKeyboard;
+			sourceTree = "<group>";
+		};
+		18CE1ABA1BD96A0500B8A057 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				18CE1ABB1BD96A2B00B8A057 /* IWEmotionTools.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		440F856C4B7F937E995799A0 /* Pods */ = {
@@ -579,8 +656,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18011FCE1BCBC09800450CCB /* IWSearchView.xib in Resources */,
+				18AB8AB31BDBDB410017436A /* IWEmotionPopView.xib in Resources */,
 				1810C0CA1BC78C4F00AF57EE /* Assets.xcassets in Resources */,
 				180048471BD3F78400B0415E /* compose.plist in Resources */,
+				1825F70A1BDA464200967C72 /* EmotionIcons in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,29 +733,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				189421671BCC8BDE00D7B6DB /* IWOAthViewController.swift in Sources */,
+				18B5E5391BD8E24000439957 /* IWComposePhotosView.swift in Sources */,
 				180048451BD3F4C100B0415E /* IWComposeButton.swift in Sources */,
+				180FE6911BDFCDB100AB3709 /* IWEmotionTextAttachment.swift in Sources */,
 				188FF11A1BCD61530031C5B8 /* IWWelcomViewController.swift in Sources */,
 				1810C10E1BC7D2CD00AF57EE /* IWTarBar.swift in Sources */,
 				180FCB4B1BD2762A001DFF3E /* IWStatusPhotoInfo.swift in Sources */,
+				18AB8AB11BDBDB270017436A /* IWEmotionPopView.swift in Sources */,
 				1810C0F71BC790C000AF57EE /* ProfileTableViewController.swift in Sources */,
 				188FF1181BCD59E70031C5B8 /* IWStatus.swift in Sources */,
 				18AB8C191BC803FA00DDFDD9 /* UIBarButtonItem+Extension.swift in Sources */,
+				18CE1AB71BD967CE00B8A057 /* IWEmotionPageCell.swift in Sources */,
 				180FCB491BD20B79001DFF3E /* IWStatusPhotos.swift in Sources */,
 				18B73D0A1BC7E31500CF4943 /* UIView+Extension.swift in Sources */,
 				18AB8C151BC7FA9A00DDFDD9 /* IWNavigationController.swift in Sources */,
 				18CAD8181BD0B7B4001B6AA9 /* IWStatusToolBar.swift in Sources */,
 				187260F21BCA72BF0051D50E /* IWHomeTitleButton.swift in Sources */,
 				188BCABB1BD3B199001B3612 /* IWNetWorkTools.swift in Sources */,
+				183092271BD7A8210022FC1C /* IWComposeToolBar.swift in Sources */,
 				189421691BCCB16E00D7B6DB /* IWUserAccount.swift in Sources */,
 				1810C0F31BC7908700AF57EE /* HomeTableViewController.swift in Sources */,
+				18B5E53D1BD8F1D000439957 /* IWComposePhotoView.swift in Sources */,
+				189149921BDF993F00847DDD /* IWEmotionTextView.swift in Sources */,
 				187F14001BCFF08700F46847 /* IWUser.swift in Sources */,
 				1836332C1BD62A3200E3A6D3 /* IWTextView.swift in Sources */,
 				18AB8C1B1BC81ED100DDFDD9 /* CommonConfig.swift in Sources */,
+				18CE1ABC1BD96A2B00B8A057 /* IWEmotionTools.swift in Sources */,
+				18CE1AB11BD92F2B00B8A057 /* IWEmotionKeyboard.swift in Sources */,
 				18409F4C1BCFCD5200D53440 /* IWStatusFrame.swift in Sources */,
+				18CE1AB91BD968EA00B8A057 /* IWEmotion.swift in Sources */,
 				188BCAB81BD383D5001B3612 /* NSDate+Extension.swift in Sources */,
+				18AB8AAD1BDBC3090017436A /* NSString+Emoji.m in Sources */,
 				187F14021BCFFA3100F46847 /* IWStatusCell.swift in Sources */,
 				18409F481BCF74C500D53440 /* IWTabBarItem.swift in Sources */,
+				18CE1AB51BD953EF00B8A057 /* IWEmotionToolBarButton.swift in Sources */,
 				187F14041BD007DD00F46847 /* String+Extension.swift in Sources */,
+				18AB8AAF1BDBC54A0017436A /* IWEmotionButton.swift in Sources */,
 				188CE3111BD551B2009814C8 /* IWComposeViewController.swift in Sources */,
 				18011FD21BCBD67E00450CCB /* IWNewFeatureViewController.swift in Sources */,
 				1810C0F11BC78F6200AF57EE /* IWTabBarController.swift in Sources */,
@@ -686,7 +778,9 @@
 				18DCA4DD1BD3C6560008A3A2 /* UIImage+ImageEffects.m in Sources */,
 				1810C0C31BC78C4F00AF57EE /* AppDelegate.swift in Sources */,
 				1810C0F91BC790D800AF57EE /* MessageTableViewController.swift in Sources */,
+				18B5E53B1BD8EF5400439957 /* UIImage+Extension.swift in Sources */,
 				187260F41BCA7BA10051D50E /* IWPopView.swift in Sources */,
+				18CE1AB31BD942B400B8A057 /* IWEmotionToolBar.swift in Sources */,
 				180048431BD3ED3B00B0415E /* IWComposeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

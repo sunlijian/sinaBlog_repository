@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IWEmotionPopView" customModule="sinaBlog_sunlijian" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="emoticon_keyboard_magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="3cP-tV-BhX">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="91"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPq-9x-RuB" customClass="IWEmotionButton" customModule="sinaBlog_sunlijian" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EPq-9x-RuB" secondAttribute="height" multiplier="1:1" id="rHZ-Dk-KN5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EPq-9x-RuB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5gr-FI-HVI"/>
+                <constraint firstItem="EPq-9x-RuB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FOF-YS-1P0"/>
+                <constraint firstItem="EPq-9x-RuB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KJc-E8-zcN"/>
+                <constraint firstAttribute="trailing" secondItem="EPq-9x-RuB" secondAttribute="trailing" id="PhQ-bX-oEu"/>
+                <constraint firstItem="EPq-9x-RuB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lAe-Cu-0nh"/>
+                <constraint firstAttribute="trailing" secondItem="EPq-9x-RuB" secondAttribute="trailing" id="yQJ-0S-huG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emotionButton" destination="EPq-9x-RuB" id="qjn-mv-2Y2"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="347.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emoticon_keyboard_magnifier" width="64" height="91"/>
+    </resources>
+</document>

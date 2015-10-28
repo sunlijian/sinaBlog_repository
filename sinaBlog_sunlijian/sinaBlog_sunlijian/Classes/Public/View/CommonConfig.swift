@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let IWEmotionButtonDidSelectedNotification = "IWEmotionButtonDidSelectedNotification"
+/// 删除按钮点击的通知
+let IWEmotionDeleteButtonDidSelectedNotification = "IWEmotionDeleteButtonDidSelectedNotification"
 let SCREEN_W = UIScreen.mainScreen().bounds.size.width
 let SCREEN_H = UIScreen.mainScreen().bounds.size.height
 
@@ -26,4 +29,10 @@ func printLog(message: AnyObject, error: Bool = false, fileName: String = __FILE
 func RGB(r r: CGFloat,g: CGFloat, b: CGFloat) -> UIColor {
     
     return UIColor(red: r/255, green: g/255, blue: b/255, alpha: 1)
+}
+
+func RandomColor() -> UIColor {
+    
+    return RGB(r: CGFloat(random() % 255), g: CGFloat(random() % 255), b: CGFloat(random() % 255))
+    
 }

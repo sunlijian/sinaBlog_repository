@@ -29,8 +29,9 @@ class IWTextView: UITextView {
         //添加一个 label 作为占位用
         addSubview(placeHoldLable)
         
+
         //添加通知
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "textViewDidChange:", name: UITextViewTextDidChangeNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "textViewChange:", name: UITextViewTextDidChangeNotification, object: nil)
     }
     
     
@@ -43,16 +44,19 @@ class IWTextView: UITextView {
         return label
     }()
     
+    
     //设置占位 label 的位置
     override func layoutSubviews() {
         super.layoutSubviews()
         placeHoldLable.x = TEXT_CONTAINER_MAGIN
         placeHoldLable.y = 8
         placeHoldLable.size = (placeHoldLable.text ?? "").size(placeHoldLable.font, constrainedToSize: CGSizeMake(SCREEN_W - 2*TEXT_CONTAINER_MAGIN, CGFloat(MAXFLOAT)))
+
+        
     }
 
     //通知
-    func textViewDidChange(notify: NSNotification){
+    func textViewChange(notify: NSNotification){
         placeHoldLable.hidden = self.hasText()
     }
     //移除通知
