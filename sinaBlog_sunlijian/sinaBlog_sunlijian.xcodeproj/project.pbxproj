@@ -45,6 +45,9 @@
 		189149921BDF993F00847DDD /* IWEmotionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189149911BDF993F00847DDD /* IWEmotionTextView.swift */; settings = {ASSET_TAGS = (); }; };
 		189421671BCC8BDE00D7B6DB /* IWOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		189421691BCCB16E00D7B6DB /* IWUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189421681BCCB16E00D7B6DB /* IWUserAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		189895CC1BE091F8007E71BB /* IWMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189895CB1BE091F8007E71BB /* IWMatchResult.swift */; settings = {ASSET_TAGS = (); }; };
+		189895D11BE0936A007E71BB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 189895D01BE0936A007E71BB /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		189895D31BE093A0007E71BB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 189895D21BE093A0007E71BB /* libicucore.tbd */; };
 		18AB8AAD1BDBC3090017436A /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AAC1BDBC3090017436A /* NSString+Emoji.m */; settings = {ASSET_TAGS = (); }; };
 		18AB8AAF1BDBC54A0017436A /* IWEmotionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AAE1BDBC54A0017436A /* IWEmotionButton.swift */; settings = {ASSET_TAGS = (); }; };
 		18AB8AB11BDBDB270017436A /* IWEmotionPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8AB01BDBDB270017436A /* IWEmotionPopView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -128,6 +131,10 @@
 		189149911BDF993F00847DDD /* IWEmotionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionTextView.swift; sourceTree = "<group>"; };
 		189421661BCC8BDE00D7B6DB /* IWOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWOAthViewController.swift; sourceTree = "<group>"; };
 		189421681BCCB16E00D7B6DB /* IWUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWUserAccount.swift; sourceTree = "<group>"; };
+		189895CB1BE091F8007E71BB /* IWMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWMatchResult.swift; sourceTree = "<group>"; };
+		189895CF1BE0936A007E71BB /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		189895D01BE0936A007E71BB /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		189895D21BE093A0007E71BB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		18AB8AAB1BDBC3090017436A /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		18AB8AAC1BDBC3090017436A /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		18AB8AAE1BDBC54A0017436A /* IWEmotionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWEmotionButton.swift; sourceTree = "<group>"; };
@@ -161,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189895D31BE093A0007E71BB /* libicucore.tbd in Frameworks */,
 				115CA8FE132790F2B12090C1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +265,7 @@
 			children = (
 				1810C0FA1BC7CDD100AF57EE /* Classes */,
 				1810C0C21BC78C4F00AF57EE /* AppDelegate.swift */,
+				189895CD1BE0936A007E71BB /* ThirdLibs */,
 				1825F7091BDA464200967C72 /* EmotionIcons */,
 				1810C0C91BC78C4F00AF57EE /* Assets.xcassets */,
 				180048461BD3F78400B0415E /* compose.plist */,
@@ -304,6 +313,7 @@
 				180FCB4A1BD2762A001DFF3E /* IWStatusPhotoInfo.swift */,
 				18CE1AB81BD968EA00B8A057 /* IWEmotion.swift */,
 				180FE6901BDFCDB100AB3709 /* IWEmotionTextAttachment.swift */,
+				189895CB1BE091F8007E71BB /* IWMatchResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,6 +506,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		189895CD1BE0936A007E71BB /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				189895CE1BE0936A007E71BB /* RegexKitLite */,
+			);
+			path = ThirdLibs;
+			sourceTree = "<group>";
+		};
+		189895CE1BE0936A007E71BB /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				189895CF1BE0936A007E71BB /* RegexKitLite.h */,
+				189895D01BE0936A007E71BB /* RegexKitLite.m */,
+			);
+			path = RegexKitLite;
+			sourceTree = "<group>";
+		};
 		18AB8AAA1BDBC3090017436A /* NSStringEmoji */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +567,7 @@
 		E7EEC51C48B82C902FD8CEBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189895D21BE093A0007E71BB /* libicucore.tbd */,
 				74CBA4BD6DB6475DAF161257 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -750,6 +778,7 @@
 				18CAD8181BD0B7B4001B6AA9 /* IWStatusToolBar.swift in Sources */,
 				187260F21BCA72BF0051D50E /* IWHomeTitleButton.swift in Sources */,
 				188BCABB1BD3B199001B3612 /* IWNetWorkTools.swift in Sources */,
+				189895D11BE0936A007E71BB /* RegexKitLite.m in Sources */,
 				183092271BD7A8210022FC1C /* IWComposeToolBar.swift in Sources */,
 				189421691BCCB16E00D7B6DB /* IWUserAccount.swift in Sources */,
 				1810C0F31BC7908700AF57EE /* HomeTableViewController.swift in Sources */,
@@ -782,6 +811,7 @@
 				187260F41BCA7BA10051D50E /* IWPopView.swift in Sources */,
 				18CE1AB31BD942B400B8A057 /* IWEmotionToolBar.swift in Sources */,
 				180048431BD3ED3B00B0415E /* IWComposeView.swift in Sources */,
+				189895CC1BE091F8007E71BB /* IWMatchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

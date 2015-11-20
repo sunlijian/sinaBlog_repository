@@ -180,4 +180,24 @@ class IWEmotionTools: NSObject {
     }
     
     
+    //通过表情描述 找到对应的表情模型
+    class func emtionWithChs(chs: String) -> IWEmotion?{
+        //遍历默认表情
+        for emotion in defaultEmotions{
+            if (emotion.chs! as NSString).isEqual(chs){
+                return emotion
+            }
+        }
+        
+        //遍历浪小花
+        for emotion in LxhEmotions{
+            if (emotion.chs! as NSString).isEqual(chs){
+                return emotion
+            }
+        }
+        
+        return nil
+    }
+    
+    
 }

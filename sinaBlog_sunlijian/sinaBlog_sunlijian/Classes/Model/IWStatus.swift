@@ -74,7 +74,11 @@ class IWStatus: NSObject {
         }
     }
     //原创微博内容
-    var text: String?
+    var text: String?{
+        didSet{
+            setStatusAttributedText()
+        }
+    }
     //原创微博的图片
     var pic_urls: [IWStatusPhotoInfo]?
     //微博的转发数
@@ -85,6 +89,9 @@ class IWStatus: NSObject {
     var attitudes_count: Int = 0
     //转发微博
     var retweeted_status: IWStatus?
+    
+    //当前微博内容带有属性的文字(显示表情)
+    var attributedText: NSMutableAttributedString?
     
     init(dictionary: [String: AnyObject]) {
         super.init()
@@ -116,5 +123,80 @@ class IWStatus: NSObject {
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
         
     }
+    
+    private func setStatusAttributedText(){
+        let statusText = text ?? ""
+        let attr = NSMutableAttributedString(string: statusText)
+        
+        //定义一个匹配结果的集合
+        var regexResults = [IWMatchResult]()
+        
+        //匹配当前微博内容里面的表情字符串
+        (statusText as NSString).enumerateStringsMatchedByRegex("\\[[a-zA-Z0-9\\u4e00-\\u9fa5]+\\]") { (captureCount, captureString, captureRange, stop) -> Void in
+            //
+            let result = IWMatchResult()
+            result.captureString = captureString.memory! as String
+            print(result.captureString)
+            result.captureRange = captureRange.memory
+            
+            regexResults.append(result)
+        }
+        
+        //反转遍历
+        for matchResult in regexResults.reverse(){
+            
+            let emotionChs = matchResult.captureString!
+
+            let emotion = IWEmotionTools.emtionWithChs(emotionChs as String)
+            
+            if let emo = emotion {
+                let attachment = NSTextAttachment()
+                attachment.image = UIImage(named: "\(emo.prePath!)/\(emo.png!)")
+                let imageWH = UIFont.systemFontOfSize(CELL_STATUS_TEXT_FONT).lineHeight
+                attachment.bounds = CGRectMake(0, -4, imageWH, imageWH)
+                
+                //生成表情的属性文字
+                let emotionAttr = NSAttributedString(attachment: attachment)
+                
+                attr.replaceCharactersInRange(matchResult.captureRange!, withAttributedString: emotionAttr)
+                
+            }
+            
+        }
+        //设置字体大小
+        attr.addAttribute(NSFontAttributeName, value:  UIFont.systemFontOfSize(CELL_STATUS_TEXT_FONT), range: NSMakeRange(0, attr.length))
+        
+        //设置高亮
+        highlightedLink(attr)
+        
+        attributedText = attr
+    }
+    
+    //设置高亮链接
+    private func highlightedLink(attr: NSMutableAttributedString){
+        let string = attr.string as NSString
+        //匹配@谁 -->@后面不能跟冒号,也不能跟空格
+        string.enumerateStringsMatchedByRegex("@[^:^\\s]+") { (captureCount, captureString, captureRange, stop) -> Void in
+            
+            //添加文字高亮的属性
+            attr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: captureRange.memory)
+        }
+        
+        //匹配链接
+        string.enumerateStringsMatchedByRegex("http://[^\\s^\\u4e00-\\u9fa5]+") { (captureCount, captureString, captureRange, stop) -> Void in
+            
+            //添加文字高亮的属性
+            attr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: captureRange.memory)
+        }
+        
+        //匹配话题
+        string.enumerateStringsMatchedByRegex("#[^#]+#") { (captureCount, captureString, captureRange, stop) -> Void in
+            
+            //添加文字高亮的属性
+            attr.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: captureRange.memory)
+        }
+    }
+    
+    
 
 }

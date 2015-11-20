@@ -157,7 +157,9 @@ class IWStatusCell: UITableViewCell {
         sourceLabel.text = status.source
         //设置 原创内容
         originalTextLabel.frame = statusF.textF!
-        originalTextLabel.text = status.text
+        originalTextLabel.attributedText = status.attributedText
+        
+//        originalTextLabel.text = status.text
         //设置 原创的图片
         if let originalPhotosUrls = status.pic_urls where originalPhotosUrls.count>0{
             originalPhotos.hidden = false
@@ -179,7 +181,7 @@ class IWStatusCell: UITableViewCell {
             retweetView.frame = statusF.retweetViewF!
             //转发微博的内容
             retweetViewLabel.frame = statusF.retweetTextLabelF!
-            retweetViewLabel.text = retStatus.text
+            retweetViewLabel.attributedText = retStatus.attributedText
             //转发微博的图片
             if let retweetPhotosUrls = retStatus.pic_urls where retweetPhotosUrls.count>0{
                 retweetPhotos.hidden = false
